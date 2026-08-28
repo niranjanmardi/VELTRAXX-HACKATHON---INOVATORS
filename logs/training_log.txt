@@ -1,0 +1,2 @@
+Baseline accuracy: 97.39%
+Model size: 0.90 MB
