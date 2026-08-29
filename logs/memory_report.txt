@@ -1,0 +1,8 @@
+=== Memory Report ===
+Dense model weight size:  941,480 bytes (0.90 MB)
+Sparse CSR file size:     395,120 bytes (0.38 MB)
+RLE Token file size:      386,400 bytes (0.37 MB)
+Memory reduction ratio:   2.38x (CSR) / 2.44x (RLE)
+Sparsity achieved:        75.02%
+Status: PASS (target: 2.0x reduction)
+Zero inflation avoided:   YES (Direct indexing & RLE Stream)

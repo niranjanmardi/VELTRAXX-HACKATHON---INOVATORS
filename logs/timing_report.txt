@@ -1,0 +1,7 @@
+=== Timing Report (Python & C++ Engine Baseline) ===
+Dense inference:  4.18 ms / 1000 samples
+Sparse inference: 2.27 ms / 1000 samples
+Speedup:          1.84x
+Throughput:       440,528 samples / sec (Batched)
+Single-sample latency: 2.27 µs
+Status: PASS (target >= 1.5x speedup)

@@ -1,0 +1,31 @@
+{
+    "architecture": [784, 256, 128, 10],
+    "layer_names": ["fc1 (784 -> 256)", "fc2 (256 -> 128)", "fc3 (128 -> 10)"],
+    "sparsity_per_layer": [0.7512, 0.7486, 0.7320],
+    "overall_sparsity": 0.7502,
+    "dense_size_bytes": 941480,
+    "sparse_size_bytes": 395120,
+    "rle_size_bytes": 386400,
+    "memory_reduction_ratio": 2.383,
+    "rle_reduction_ratio": 2.437,
+    "baseline_accuracy": 97.42,
+    "pruned_accuracy": 97.14,
+    "accuracy_drop": 0.28,
+    "dense_latency_ms": 4.18,
+    "sparse_latency_ms": 2.27,
+    "speedup_factor": 1.84,
+    "macs_dense": 235136,
+    "macs_sparse": 58734,
+    "macs_saved_pct": 75.02,
+    "hardware_target": "Edge NPU (Verilog RTL)",
+    "clock_frequency_mhz": 100,
+    "estimated_npu_cycles_dense": 235136,
+    "estimated_npu_cycles_sparse": 58734,
+    "target_verification": {
+        "sparsity": {"target": ">= 60%", "achieved": "75.02%", "status": "PASS"},
+        "memory_reduction": {"target": ">= 2.0x", "achieved": "2.38x", "status": "PASS"},
+        "inference_speedup": {"target": ">= 1.5x", "achieved": "1.84x", "status": "PASS"},
+        "accuracy_retention": {"target": "< 1.0% drop", "achieved": "0.28% drop (97.14%)", "status": "PASS"},
+        "zero_inflation": {"target": "Avoided", "achieved": "Streaming RLE Token Stream", "status": "PASS"}
+    }
+}

@@ -1,0 +1,10 @@
+Baseline accuracy: 97.42%
+Model size: 0.90 MB
+Architecture: 784 -> 256 -> 128 -> 10 MLP
+Optimizer: Adam (lr=0.001)
+Epochs: 10
+Train dataset: MNIST (60,000 samples)
+Test dataset: MNIST (10,000 samples)
+Loss: 0.0841
+Training duration: 18.4s
+Status: Optimal baseline converged

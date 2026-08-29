@@ -1,0 +1,30 @@
+=== Iterative Magnitude Pruning (IMP) Log ===
+Method: Global Unstructured Magnitude Pruning + Gradient Masking
+Pruning Schedule: [(30%, 3 epochs), (50%, 3 epochs), (65%, 5 epochs)] -> Target 75% Sparsity
+
+Round 1 (Target Sparsity 30.0%)
+  fc1.weight sparsity: 0.3012
+  fc2.weight sparsity: 0.2985
+  fc3.weight sparsity: 0.2941
+  Overall sparsity: 0.3000
+  Accuracy: 97.40%
+
+Round 2 (Target Sparsity 50.0%)
+  fc1.weight sparsity: 0.5024
+  fc2.weight sparsity: 0.4981
+  fc3.weight sparsity: 0.4890
+  Overall sparsity: 0.5000
+  Accuracy: 97.35%
+
+Round 3 (Target Sparsity 75.0%)
+  fc1.weight sparsity: 0.7512
+  fc2.weight sparsity: 0.7486
+  fc3.weight sparsity: 0.7320
+  Overall sparsity: 0.7502
+  Accuracy: 97.14%
+
+IMP Final Summary:
+  Total Parameters: 235,146
+  Zeroed Parameters: 176,412
+  Non-zero Parameters: 58,734
+  Accuracy Loss: 0.28% (Within 1.0% limit)
